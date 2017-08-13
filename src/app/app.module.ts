@@ -2,10 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProjectsSectionComponent } from './resume/projects-section/projects-section.component';
+import { AdditionalSkillsSectionComponent } from './resume/additional-skills-section/additional-skills-section.component';
+import { ExperienceSectionComponent } from './resume/experience-section/experience-section.component';
+import { GitGlassComponent } from './git-glass/git-glass.component';
+import { SkillsSectionComponent } from './resume/skills-section/skills-section.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ResumeComponent,
+    ProjectsSectionComponent,
+    AdditionalSkillsSectionComponent,
+    ExperienceSectionComponent,
+    GitGlassComponent,
+    SkillsSectionComponent
   ],
   imports: [
     BrowserModule
