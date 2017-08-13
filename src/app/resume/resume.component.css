@@ -1,0 +1,9 @@
+.container {
+  background-color: lightslategray;
+  width: 1000px;
+}
+
+.listbox {
+  width: 600px;
+  background-color: #8959a8;
+}

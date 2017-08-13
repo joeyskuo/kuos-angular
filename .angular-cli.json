@@ -20,9 +20,12 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "./assets/css/github-embed.css",
         "styles.css"
       ],
-      "scripts": ["./app/js/fa.js"],
+      "scripts": [
+        "./app/js/fa.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

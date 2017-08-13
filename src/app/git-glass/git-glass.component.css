@@ -1,0 +1,10 @@
+#git-glass {
+  font-size: 12px;
+  height: 800px;
+  width: 800px;
+  margin-bottom: 2rem;
+}
+.container {
+  background-color: lightskyblue;
+  width: 820px;
+}
