@@ -1,12 +1,17 @@
-.git-glass {
+.git-glass div {
   font-size: 12px;
-  height: 700px;
-  width: 800px;
+  height: 800px;
+  width: 750px;
   margin-bottom: 2rem;
 }
 
+iframe body,html {
+  min-width: 750px !important;
+}
+
 .container {
-  background-color: lightskyblue;
-  width: 820px;
-  height: 100%;
+  background-color: #FFF;
+  width: 800px;
+  height: 1000px;
+  border-radius: 20px;
 }

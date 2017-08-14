@@ -1,18 +1,19 @@
 .container {
-  background-color: lightslategray;
-  width: 1000px;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 800px;
 }
 
 /deep/ .listbox {
   width: 500px;
-  background-color: #8959a8;
+  //background-color: #8959a8;
          font-size: 15px;
 }
 
 /deep/ .details {
          text-align: right;
          line-height: 0.6;
-         background-color: #4271ae;
+         //background-color: #4271ae;
          width: 250px;
        }
 

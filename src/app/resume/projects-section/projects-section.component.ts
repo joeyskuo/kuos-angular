@@ -17,9 +17,5 @@ export class ProjectsSectionComponent implements OnInit {
     this.projects = this.gitGlassService.getProjects();
   }
 
-  onSelected() {
-    console.log("Project selected!");
-    //this.gitGlassService.recipeSelected.emit(this.recipe);
-  }
 
 }

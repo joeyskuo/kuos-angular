@@ -93,13 +93,33 @@ export class GitGlassService {
       'Angular 4 personal web page',
       {
         "owner": "joeyskuo",
-        "repo": "ali-cucumber-sauce",
+        "repo": "kuos-angular",
         "ref": "master",
         "embed": [
           {
-            "type": "feature",
-            "label": "Feature file",
-            "path": "src/com/kuos/cucumber/features/HomePageNav.feature"
+            "type": "html",
+            "label": "app.component.html",
+            "path": "src/app/app.component.html"
+          },
+          {
+            "type": "html",
+            "label": "resume.component.html",
+            "path": "src/app/resume/resume.component.html"
+          },
+          {
+            "type": "html",
+            "label": "git-glass.component.html",
+            "path": "src/app/git-glass/git-glass.component.html"
+          },
+          {
+            "type": "ts",
+            "label": "git-glass.component.ts",
+            "path": "src/app/git-glass/git-glass.component.ts"
+          },
+          {
+            "type": "ts",
+            "label": "git-glass.service.ts",
+            "path": "src/app/git-glass.service.ts"
           }
         ]
       }

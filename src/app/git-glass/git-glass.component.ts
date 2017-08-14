@@ -27,21 +27,6 @@ export class GitGlassComponent implements OnInit {
       );
   }
 
-  onButtonClicked() {
-    githubEmbed('#git-glass', {
-      "owner": "joeyskuo",
-      "repo": "alexa-sketches-vui",
-      "ref": "master",
-      "embed": [
-        {
-          "type": "js",
-          "label": "Webpack config",
-          "path": "index.js"
-        }
-      ]
-    });
-  }
-
   setProject(project: Project){
     this.selectedProject = project;
     return project;
@@ -51,4 +36,55 @@ export class GitGlassComponent implements OnInit {
     console.log(project.embedObject);
     githubEmbed(project.name, project.embedObject);
   }
+
+  toJavaFrame() {
+    this.selectedProject.name = '#selenium-java';
+    wait(5).then(() =>
+      githubEmbed('#selenium-java',
+        {
+          "owner": "joeyskuo",
+          "repo": "selenium-java",
+          "ref": "master",
+          "embed": [
+            {
+              "type": "xml",
+              "label": "testng-amazon.xml",
+              "path": "testng-amazon.xml"
+            },
+            {
+              "type": "java",
+              "label": "BannerToCartTest.java",
+              "path": "src/test/java/com/kuos/tests/BannerToCartTest.java"
+            },
+            {
+              "type": "java",
+              "label": "SearchResultTest.java",
+              "path": "src/test/java/com/kuos/tests/SearchResultTest.java"
+            },            {
+              "type": "java",
+              "label": "HomePage.java",
+              "path": "src/test/java/com/kuos/pageobjects/HomePage.java"
+            },            {
+              "type": "java",
+              "label": "ProductPage.java",
+              "path": "src/test/java/com/kuos/pageobjects/ProductPage.java"
+            },
+            {
+              "type": "xml",
+              "label": "pom.xml",
+              "path": "pom.xml"
+            }
+          ]
+        }));
+
+  }
+
+  toPythonFrame() {
+    this.selectedProject.name = '#selenium-python';
+    wait(5).then(() =>
+      githubEmbed('#selenium-python',
+        this.gitGlassService.getProjects()[0].embedObject));
+
+  }
+
 }
