@@ -1,8 +1,15 @@
 <div class="container">
-  <button type="button" class="btn btn-primary" *ngIf="selectedProject">Primary</button>
-  <button type="button" class="btn btn-success" (click)="onButtonClicked()">Success</button>
-  <div><br></div>
-  <div id="git-glass"></div>
+  <button type="button" class="btn btn-success" *ngIf="selectedProject.name== '#selenium-java' || selectedProject.name== '#selenium-python'">Python</button>
+  <button type="button" class="btn btn-primary" *ngIf="selectedProject.name== '#selenium-java' || selectedProject.name== '#selenium-python'">Java</button>
 
+  <div><br></div>
+  <div id="selenium-java" class="git-glass" *ngIf="selectedProject.name== '#selenium-java'"></div>
+  <div id="selenium-python" class="git-glass" *ngIf="selectedProject.name== '#selenium-python'"></div>
+  <div id="robot-amazon" class="git-glass" *ngIf="selectedProject.name== '#robot-amazon'"></div>
+  <div id="kuos-angular" class="git-glass" *ngIf="selectedProject.name== '#kuos-angular'"></div>
+  <div id="ali-cucumber-sauce" class="git-glass" *ngIf="selectedProject.name== '#ali-cucumber-sauce'"></div>
+  <div id="simple-store-api" class="git-glass" *ngIf="selectedProject.name== '#simple-store-api'"></div>
+  <div id="alexa-sketches-vui" class="git-glass" *ngIf="selectedProject.name== '#alexa-sketches-vui'"></div>
+  <div id="woo-commerce-pytest" class="git-glass" *ngIf="selectedProject.name== '#woo-commerce-pytest'"></div>
 </div>
 

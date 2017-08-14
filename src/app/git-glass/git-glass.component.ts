@@ -4,6 +4,8 @@ import * as githubEmbed from '../js/github-embed.min';
 import {Project} from "../project.model";
 import {GitGlassService} from "../git-glass.service";
 
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 @Component({
   selector: 'app-git-glass',
   templateUrl: './git-glass.component.html',
@@ -20,7 +22,7 @@ export class GitGlassComponent implements OnInit {
       .subscribe(
         (project: Project) => {
           this.selectedProject = project;
-          this.onProjectSelected(project);
+          wait(5).then(() => this.onProjectSelected(project));
         }
       );
   }
@@ -40,8 +42,13 @@ export class GitGlassComponent implements OnInit {
     });
   }
 
+  setProject(project: Project){
+    this.selectedProject = project;
+    return project;
+  }
+
   onProjectSelected(project: Project) {
     console.log(project.embedObject);
-    githubEmbed('#git-glass', project.embedObject);
+    githubEmbed(project.name, project.embedObject);
   }
 }
