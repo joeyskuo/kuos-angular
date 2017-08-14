@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as githubEmbed from '../js/github-embed.min';
+import {Project} from "../project.model";
+import {GitGlassService} from "../git-glass.service";
 
 @Component({
   selector: 'app-git-glass',
@@ -9,9 +11,18 @@ import * as githubEmbed from '../js/github-embed.min';
 })
 export class GitGlassComponent implements OnInit {
 
-  constructor() { }
+  selectedProject: Project;
+
+  constructor(private gitGlassService: GitGlassService) { }
 
   ngOnInit() {
+    this.gitGlassService.projectSelected
+      .subscribe(
+        (project: Project) => {
+          this.selectedProject = project;
+          this.onProjectSelected(project);
+        }
+      );
   }
 
   onButtonClicked() {
@@ -29,4 +40,8 @@ export class GitGlassComponent implements OnInit {
     });
   }
 
+  onProjectSelected(project: Project) {
+    console.log(project.embedObject);
+    githubEmbed('#git-glass', project.embedObject);
+  }
 }

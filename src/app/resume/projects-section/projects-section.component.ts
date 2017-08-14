@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GitGlassService} from "../../git-glass.service";
+import {Project} from "../../project.model";
 
 @Component({
   selector: 'app-projects-section',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsSectionComponent implements OnInit {
 
-  constructor() { }
+  projects: Project[];
+
+  constructor(private gitGlassService: GitGlassService) { }
 
   ngOnInit() {
+    this.projects = this.gitGlassService.getProjects();
+  }
+
+  onSelected() {
+    console.log("Project selected!");
+    //this.gitGlassService.recipeSelected.emit(this.recipe);
   }
 
 }

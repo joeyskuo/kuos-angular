@@ -9,6 +9,8 @@ import { AdditionalSkillsSectionComponent } from './resume/additional-skills-sec
 import { ExperienceSectionComponent } from './resume/experience-section/experience-section.component';
 import { GitGlassComponent } from './git-glass/git-glass.component';
 import { SkillsSectionComponent } from './resume/skills-section/skills-section.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProjectDetailComponent } from './resume/projects-section/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SkillsSectionComponent } from './resume/skills-section/skills-section.c
     AdditionalSkillsSectionComponent,
     ExperienceSectionComponent,
     GitGlassComponent,
-    SkillsSectionComponent
+    SkillsSectionComponent,
+    FooterComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule
