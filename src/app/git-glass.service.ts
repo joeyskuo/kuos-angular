@@ -10,13 +10,28 @@ export class GitGlassService {
       'Selenium WebDriver test suites developed in Java and Python',
       {
         "owner": "joeyskuo",
-        "repo": "alexa-sketches-vui",
+        "repo": "selenium-python",
         "ref": "master",
         "embed": [
           {
-            "type": "js",
-            "label": "Webpack config",
-            "path": "index.js"
+            "type": "py",
+            "label": "test_BannerToCart.py",
+            "path": "tests/test_BannerToCart.py"
+          },
+          {
+            "type": "py",
+            "label": "test_SearchFeature.py",
+            "path": "tests/test_SearchFeature.py"
+          },
+          {
+            "type": "py",
+            "label": "home_page.py",
+            "path": "pages/home_page.py"
+          },
+          {
+            "type": "py",
+            "label": "product_page.py",
+            "path": "pages/product_page.py"
           }
         ]
       }
@@ -31,8 +46,18 @@ export class GitGlassService {
         "embed": [
           {
             "type": "robot",
-            "label": "BannerToCart",
+            "label": "BannerToCart.robot",
             "path": "Tests/BannerToCart.robot"
+          },
+          {
+            "type": "robot",
+            "label": "SearchFeature.robot",
+            "path": "Tests/SearchFeature.robot"
+          },
+          {
+            "type": "robot",
+            "label": "Amazon.robot",
+            "path": "Resources/Amazon.robot"
           }
         ]
       }
@@ -47,8 +72,18 @@ export class GitGlassService {
         "embed": [
           {
             "type": "feature",
-            "label": "Feature file",
+            "label": "HomePageNav.feature",
             "path": "src/com/kuos/cucumber/features/HomePageNav.feature"
+          },
+          {
+            "type": "java",
+            "label": "HomePageTests.java",
+            "path": "src/com/kuos/appium/stepdef/HomePageTests.java"
+          },
+          {
+            "type": "java",
+            "label": "HomePageMethods.java",
+            "path": "src/com/kuos/appium/pagemethods/HomePageMethods.java"
           }
         ]
       }
@@ -78,6 +113,26 @@ export class GitGlassService {
         "ref": "master",
         "embed": [
           {
+            "type": "py",
+            "label": "app.py",
+            "path": "app/app.py"
+          },
+          {
+            "type": "py",
+            "label": "item.py",
+            "path": "app/resources/item.py"
+          },
+          {
+            "type": "py",
+            "label": "user.py",
+            "path": "app/resources/user.py"
+          },
+          {
+            "type": "py",
+            "label": "ItemModel.py",
+            "path": "app/models/ItemModel.py"
+          },
+          {
             "type": "htmlpage",
             "label": "Swagger definition",
             "url": "https://app.swaggerhub.com/apis/joeyskuo/Simple-Store/1.0.0"
@@ -97,6 +152,11 @@ export class GitGlassService {
             "type": "js",
             "label": "Alexa Skill",
             "path": "index.js"
+          },
+          {
+            "type": "htmlpage",
+            "label": "Sketchesgame.io",
+            "url": "https://www.sketchesgame.io"
           }
         ]
       }
@@ -110,9 +170,9 @@ export class GitGlassService {
         "ref": "master",
         "embed": [
           {
-            "type": "py",
-            "label": "Swagger definition",
-            "path": "Balanced Parentheses Check .ipynb"
+            "type": "htmlpage",
+            "label": "N/A",
+            "url": "http://www.github.com/nosuchrepo"
           }
         ]
       }
