@@ -99,17 +99,12 @@ export class GitGlassService {
         "embed": [
           {
             "type": "html",
-            "label": "resume.component.html",
+            "label": "resume.component",
             "path": "src/app/resume/resume.component.html"
           },
           {
             "type": "html",
-            "label": "projects.component.html",
-            "path": "src/app/resume/projects-section/projects-section.component.html"
-          },
-          {
-            "type": "html",
-            "label": "git-glass.component.html",
+            "label": "git-glass.component",
             "path": "src/app/git-glass/git-glass.component.html"
           },
           {

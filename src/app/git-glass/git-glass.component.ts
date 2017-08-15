@@ -68,18 +68,10 @@ export class GitGlassComponent implements OnInit {
               "label": "BannerToCartTest.java",
               "path": "src/test/java/com/kuos/tests/BannerToCartTest.java"
             },
-            {
-              "type": "java",
-              "label": "SearchResultTest.java",
-              "path": "src/test/java/com/kuos/tests/SearchResultTest.java"
-            },            {
+           {
               "type": "java",
               "label": "HomePage.java",
               "path": "src/test/java/com/kuos/pageobjects/HomePage.java"
-            },            {
-              "type": "java",
-              "label": "ProductPage.java",
-              "path": "src/test/java/com/kuos/pageobjects/ProductPage.java"
             },
             {
               "type": "xml",
