@@ -1,23 +1,28 @@
 .container {
   background-color: #FFF;
   border-radius: 20px;
-  width: 800px;
+  width: 95%;
 }
 
 /deep/ .listbox {
-  width: 500px;
+  width: 65%;
   //background-color: #8959a8;
-         font-size: 15px;
+         font-size: 13px;
 }
 
 /deep/ .details {
          text-align: right;
+         font-size: 12px;
          line-height: 0.6;
          //background-color: #4271ae;
-         width: 250px;
+         width: 35%;
        }
 
 /deep/ h4 {
          margin-left: 3em;
          font-weight: bold;
+       }
+
+/deep/ .row {
+          width: 100%;
        }

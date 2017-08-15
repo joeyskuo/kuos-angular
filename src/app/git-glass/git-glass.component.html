@@ -1,5 +1,7 @@
 <div class="container">
   <br><br>
+  <app-self-intro *ngIf="displayIntro"></app-self-intro>
+
   <button type="button" class="btn btn-success"
           *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'"
           (click)="toPythonFrame()">Python</button>
@@ -7,7 +9,7 @@
           *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'"
           (click)="toJavaFrame()">Java</button>
 
-  <div class="git-glass">
+    <div class="git-glass">
     <br>
     <div id="selenium-java"  *ngIf="selectedProject.name == '#selenium-java'"></div>
     <div id="selenium-python" *ngIf="selectedProject.name == '#selenium-python'"></div>

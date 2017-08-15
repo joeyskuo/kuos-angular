@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  top: 20px;
+  width: 95%;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+.skills-list {
+  margin: auto;
+  width: 60%;
+}
+
+h3 {
+  text-align: center;
+}

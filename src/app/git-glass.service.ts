@@ -3,6 +3,7 @@ import {Project} from "./project.model";
 export class GitGlassService {
 
   projectSelected = new EventEmitter<Project>();
+  introSelected = new EventEmitter<boolean>();
 
   private projects: Project[] = [
     new Project(
@@ -98,13 +99,13 @@ export class GitGlassService {
         "embed": [
           {
             "type": "html",
-            "label": "app.component.html",
-            "path": "src/app/app.component.html"
+            "label": "resume.component.html",
+            "path": "src/app/resume/resume.component.html"
           },
           {
             "type": "html",
-            "label": "resume.component.html",
-            "path": "src/app/resume/resume.component.html"
+            "label": "projects.component.html",
+            "path": "src/app/resume/projects-section/projects-section.component.html"
           },
           {
             "type": "html",

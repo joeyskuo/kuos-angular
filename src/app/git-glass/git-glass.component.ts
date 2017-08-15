@@ -13,23 +13,35 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 })
 export class GitGlassComponent implements OnInit {
 
+  emptyProj: Project = new Project(
+    'empty',
+    'empty',
+    {}
+  );
+
   selectedProject: Project;
+  displayIntro: boolean = true;
 
   constructor(private gitGlassService: GitGlassService) { }
 
   ngOnInit() {
+    this.gitGlassService.introSelected
+      .subscribe(
+        (enabled: boolean) => {
+          console.log(enabled);
+          this.displayIntro = enabled;
+          this.selectedProject = this.emptyProj;
+        }
+      );
     this.gitGlassService.projectSelected
       .subscribe(
         (project: Project) => {
           this.selectedProject = project;
+          this.displayIntro = false;
+          console.log(this.displayIntro);
           wait(5).then(() => this.onProjectSelected(project));
         }
       );
-  }
-
-  setProject(project: Project){
-    this.selectedProject = project;
-    return project;
   }
 
   onProjectSelected(project: Project) {
