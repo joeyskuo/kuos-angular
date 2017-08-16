@@ -3,3 +3,11 @@
   border-radius: 0px;
   background-color: black;
 }
+
+.nav-link {
+  font-size: 19px;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+}
