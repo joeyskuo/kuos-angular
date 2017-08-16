@@ -1,3 +1,14 @@
 .container-fluid {
   background-color: black;
 }
+#wrapper {
+  height:100%;
+  width:100%;
+  background-color:black;
+}
+
+#first {
+  background-color:black;
+  height: 150px;
+}
+

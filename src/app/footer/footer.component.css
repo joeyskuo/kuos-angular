@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 .span{ margin-left: 60px; margin-right: 60px}
-.copyright { min-height:40px; color: dimgray; background-color:#000000;}
+.copyright { min-height:40px; color: dimgray; background-color:#000000; bottom: 0; width: 100%}
 .copyright p { padding:10px 0; margin-bottom:0px;}
 .bottom_ul { text-align: center; list-style-type:none; float:left; margin-bottom:0px;}
 .bottom_ul li { float:left; color: dimgray; line-height:40px;}
 .bottom_ul li:after { content:"/"; margin-right:8px; margin-left:8px;}
 .bottom_ul li a { color:#FFF;  font-size:12px;}
+.navbar { margin-bottom: 0px; border: 0px; background-color: black; min-height: 40px;}
