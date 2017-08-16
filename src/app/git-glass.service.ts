@@ -151,7 +151,7 @@ export class GitGlassService {
           {
             "type": "htmlpage",
             "label": "Swagger definition",
-            "url": "https://app.swaggerhub.com/apis/joeyskuo/Simple-Store/1.0.0"
+            "url": "https://simple-store-api.herokuapp.com/docs/#/item"
           }
         ]
       }
