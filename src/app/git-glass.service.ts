@@ -178,17 +178,17 @@ export class GitGlassService {
       }
     ),
     new Project(
-      '#woo-commerce-pytest',
-      'Pytest test cases for E-commerce REST API',
+      '#mips-processor',
+      '5-stage MIPS Processor developed to execute Assembly code',
       {
         "owner": "joeyskuo",
-        "repo": "data-struct-algo",
+        "repo": "mips-processor",
         "ref": "master",
         "embed": [
           {
             "type": "htmlpage",
-            "label": "N/A",
-            "url": "http://www.github.com/nosuchrepo"
+            "label": "Design Documentation",
+            "url": "https://joeyskuo.github.io/mips-processor/web/viewer.html"
           }
         ]
       }
