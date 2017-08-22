@@ -4,9 +4,18 @@
   background-color: black;
 }
 
-.nav-link {
-  font-size: 19px;
+.nav-item a {
+  display: inline;
+  width: 100px;
+  float: right;
+  height: 50px;
+  padding: 15px 0px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: right;
+  color: #9d9d9d;
 }
+
 
 .navbar-brand {
   margin-left: 50px;

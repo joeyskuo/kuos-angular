@@ -1,6 +1,35 @@
-p {
-  line-height: 0.6;
-}
 br {
-  line-height: 150%;
+  line-height: 100%;
+}
+
+.category {
+  text-align: right;
+  //font-size: 15px;
+  font-size: 1.8vh;
+  line-height: 0.5;
+  width: 35%;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.category2 {
+  text-align: right;
+  //font-size: 15px;
+  font-size: 1.8vh;
+  line-height: 0.5;
+  width: 35%;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-left: 13px;
+}
+
+.skills {
+  font-size: 15px;
+  white-space: nowrap;
+
+}
+
+.skills p {
+  margin-left: 30px;
+  line-height: 0.7;
 }

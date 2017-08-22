@@ -11,7 +11,7 @@ export class ResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    //console.log("intializing resume");
   }
 
 }

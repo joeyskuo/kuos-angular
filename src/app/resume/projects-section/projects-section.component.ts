@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {GitGlassService} from "../../git-glass.service";
-import {Project} from "../../project.model";
+import {GitGlassService} from '../../git-glass.service';
+import {Project} from '../../project.model';
 
 @Component({
   selector: 'app-projects-section',

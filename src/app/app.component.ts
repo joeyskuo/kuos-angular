@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GitGlassService} from "./git-glass.service";
 
 @Component({
@@ -7,6 +7,13 @@ import {GitGlassService} from "./git-glass.service";
   providers: [GitGlassService],
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  startup: boolean = false;
+
+  ngOnInit(){
+    this.startup = true;
+  }
+
   title = 'app';
 }
