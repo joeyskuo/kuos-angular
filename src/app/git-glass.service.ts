@@ -7,6 +7,63 @@ export class GitGlassService {
 
   private projects: Project[] = [
     new Project(
+      '#flashcards-react',
+      'React flashcard application with Redux',
+      {
+        "owner": "joeyskuo",
+        "repo": "flashcards-react",
+        "ref": "master",
+        "embed": [
+          {
+            "type": "js",
+            "label": "StackForm.js",
+            "path": "src/components/StackForm.js"
+          },
+          {
+            "type": "js",
+            "label": "StackForm.test.js",
+            "path": "src/components/StackForm.test.js"
+          },
+          {
+            "type": "js",
+            "label": "index.js",
+            "path": "src/reducers/index.js"
+          }
+        ]
+      }
+    ),
+    new Project(
+      '#kuos-angular',
+      'Angular personal web page',
+      {
+        "owner": "joeyskuo",
+        "repo": "kuos-angular",
+        "ref": "master",
+        "embed": [
+          {
+            "type": "html",
+            "label": "resume.component",
+            "path": "src/app/resume/resume.component.html"
+          },
+          {
+            "type": "html",
+            "label": "git-glass.component",
+            "path": "src/app/git-glass/git-glass.component.html"
+          },
+          {
+            "type": "ts",
+            "label": "git-glass.component.ts",
+            "path": "src/app/git-glass/git-glass.component.ts"
+          },
+          {
+            "type": "ts",
+            "label": "git-glass.service.ts",
+            "path": "src/app/git-glass.service.ts"
+          }
+        ]
+      }
+    ),
+    new Project(
       '#selenium-python',
       'Selenium WebDriver test suites developed in Java and Python',
       {
@@ -90,37 +147,6 @@ export class GitGlassService {
       }
     ),
     new Project(
-      '#kuos-angular',
-      'Angular 4 personal web page',
-      {
-        "owner": "joeyskuo",
-        "repo": "kuos-angular",
-        "ref": "master",
-        "embed": [
-          {
-            "type": "html",
-            "label": "resume.component",
-            "path": "src/app/resume/resume.component.html"
-          },
-          {
-            "type": "html",
-            "label": "git-glass.component",
-            "path": "src/app/git-glass/git-glass.component.html"
-          },
-          {
-            "type": "ts",
-            "label": "git-glass.component.ts",
-            "path": "src/app/git-glass/git-glass.component.ts"
-          },
-          {
-            "type": "ts",
-            "label": "git-glass.service.ts",
-            "path": "src/app/git-glass.service.ts"
-          }
-        ]
-      }
-    ),
-    new Project(
       '#simple-store-api',
       'REST API developed using Flask-RESTful and SQLAlchemy',
       {
@@ -176,23 +202,8 @@ export class GitGlassService {
           }
         ]
       }
-    ),
-    new Project(
-      '#mips-processor',
-      '5-stage MIPS Processor developed to execute Assembly code',
-      {
-        "owner": "joeyskuo",
-        "repo": "mips-processor",
-        "ref": "master",
-        "embed": [
-          {
-            "type": "htmlpage",
-            "label": "Design Documentation",
-            "url": "https://joeyskuo.github.io/mips-processor/web/viewer.html"
-          }
-        ]
-      }
-    )  ];
+    )
+  ];
 
   constructor(){}
 

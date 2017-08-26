@@ -12,8 +12,13 @@ export class AppComponent implements OnInit {
   startup: boolean = false;
 
   ngOnInit(){
+    this.startup = false;
+  }
+
+  start(){
     this.startup = true;
   }
+
 
   title = 'app';
 }

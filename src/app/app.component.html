@@ -4,6 +4,12 @@
         <app-git-glass></app-git-glass>
       </div>
       <div class="col-md-12 col-lg-6">
+        <div class="mount" *ngIf="startup == false">
+          <button type="button"
+                  class="btn btn-success show-resume"
+                  (click)="start()"
+          >Show Resume</button>
+        </div>
         <app-resume *ngIf="startup == true"></app-resume>
       </div>
     </div>

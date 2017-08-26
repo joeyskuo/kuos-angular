@@ -8,6 +8,7 @@
   display: inline;
   width: 100px;
   float: right;
+  right: 15px;
   height: 50px;
   padding: 15px 0px;
   font-size: 18px;
@@ -18,5 +19,5 @@
 
 
 .navbar-brand {
-  margin-left: 50px;
+  margin-left: 20px;
 }

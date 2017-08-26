@@ -87,7 +87,7 @@ export class GitGlassComponent implements OnInit {
     this.selectedProject.name = '#selenium-python';
     wait(5).then(() =>
       githubEmbed('#selenium-python',
-        this.gitGlassService.getProjects()[0].embedObject));
+        this.gitGlassService.getProjects()[2].embedObject));
 
   }
 
