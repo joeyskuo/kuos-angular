@@ -6,32 +6,21 @@
 }
 
 /deep/ .listbox {
-  //width: 65%;
-  //background-color: #8959a8;
-         //font-size: 1.7vmin;
          font-size: 15px;
-
-
-
-}
+       }
 
 /deep/ .details {
-         text-align: right;
-         //font-size: 1.6vmin;
-         font-size: 16px;
-         //font-size: 1.8vh;
+         text-align: left;
+         font-size: 14px;
          line-height: 0.5;
-         //background-color: #4271ae;
-         //width: 35%;
-          padding-left: 0px;
-          left: -20px;
+         padding-left: 0px;
+         left: 0px;
          white-space: nowrap;
        }
 
 /deep/ h4 {
          margin-left: 2em;
          font-weight: bold;
-        //font-size: 2.2vmin;
        }
 
 /deep/ .row {
