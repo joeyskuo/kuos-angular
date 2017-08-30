@@ -8,6 +8,15 @@
   <button type="button" class="btn btn-primary"
           *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'"
           (click)="toJavaFrame()">Java</button>
+  <button type="button" class="btn btn-success disabled"
+          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-server'"
+          >Client-side</button>
+  <button type="button" class="btn btn-primary"
+          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-server'"
+          >Server-side</button>
+  <button type="button" class="btn btn-info disabled"
+          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-server'"
+          >Open Application</button>
 
     <div class="git-glass">
     <br>
@@ -18,7 +27,7 @@
     <div id="ali-cucumber-sauce"  *ngIf="selectedProject.name == '#ali-cucumber-sauce'"></div>
     <div id="simple-store-api"  *ngIf="selectedProject.name == '#simple-store-api'"></div>
     <div id="alexa-sketches-vui" *ngIf="selectedProject.name == '#alexa-sketches-vui'"></div>
-    <div id="flashcards-react"  *ngIf="selectedProject.name == '#flashcards-react'"></div>
+    <div id="survey-stork-server"  *ngIf="selectedProject.name == '#survey-stork-server'"></div>
   </div>
   </div>
 

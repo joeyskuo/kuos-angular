@@ -7,27 +7,27 @@ export class GitGlassService {
 
   private projects: Project[] = [
     new Project(
-      '#flashcards-react',
-      'React flashcard application with Redux',
+      '#survey-stork-server',
+      'In Progress: MERN Stack React web application with OAuth',
       {
         "owner": "joeyskuo",
-        "repo": "flashcards-react",
+        "repo": "survey-stork-server",
         "ref": "master",
         "embed": [
           {
             "type": "js",
-            "label": "StackForm.js",
-            "path": "src/components/StackForm.js"
-          },
-          {
-            "type": "js",
-            "label": "StackForm.test.js",
-            "path": "src/components/StackForm.test.js"
-          },
-          {
-            "type": "js",
             "label": "index.js",
-            "path": "src/reducers/index.js"
+            "path": "index.js"
+          },
+          {
+            "type": "js",
+            "label": "authRoutes.js",
+            "path": "routes/authRoutes.js"
+          },
+          {
+            "type": "js",
+            "label": "passport.js",
+            "path": "services/passport.js"
           }
         ]
       }
@@ -148,7 +148,7 @@ export class GitGlassService {
     ),
     new Project(
       '#simple-store-api',
-      'REST API developed using Flask-RESTful and SQLAlchemy',
+      'REST API developed using Flask-RESTful, SQLAlchemy, and JWT',
       {
         "owner": "joeyskuo",
         "repo": "simple-store-api",
@@ -184,7 +184,7 @@ export class GitGlassService {
     ),
     new Project(
       '#alexa-sketches-vui',
-      'Voice user interface implemented for an online pictionary game',
+      'Voice user interface and online Pictionary application developed using D3.js, Express, and AWS Lambda',
       {
         "owner": "joeyskuo",
         "repo": "alexa-sketches-vui",
