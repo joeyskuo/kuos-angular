@@ -91,4 +91,46 @@ export class GitGlassComponent implements OnInit {
 
   }
 
+  toClientFrame() {
+    this.selectedProject.name = '#survey-stork-client';
+    wait(5).then(() =>
+      githubEmbed('#survey-stork-client',
+        {
+          "owner": "joeyskuo",
+          "repo": "survey-stork-server",
+          "ref": "master",
+          "embed": [
+            {
+              "type": "js",
+              "label": "index.js",
+              "path": "client/src/index.js"
+            },
+            {
+              "type": "js",
+              "label": "App.js",
+              "path": "client/src/components/App.js"
+            },
+            {
+              "type": "js",
+              "label": "Reducers",
+              "path": "client/src/reducers/index.js"
+            },
+            {
+              "type": "js",
+              "label": "Actions",
+              "path": "client/src/actions/index.js"
+            }
+          ]
+        }));
+
+  }
+
+  toServerFrame() {
+    this.selectedProject.name = '#survey-stork-server';
+    wait(5).then(() =>
+      githubEmbed('#survey-stork-server',
+        this.gitGlassService.getProjects()[0].embedObject));
+
+  }
+
 }
