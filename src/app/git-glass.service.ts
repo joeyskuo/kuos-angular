@@ -8,7 +8,7 @@ export class GitGlassService {
   private projects: Project[] = [
     new Project(
       '#survey-stork-server',
-      'In Progress: MERN Stack React web application with OAuth',
+      'In Progress: SaaS Survey application using MongoDB, Express, React, and the Stripe API',
       {
         "owner": "joeyskuo",
         "repo": "survey-stork-server",
