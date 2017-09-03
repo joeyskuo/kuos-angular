@@ -19,9 +19,10 @@
           >Open Application</button>
 
     <div class="git-glass">
-    <br>
-    <div *ngIf="displayCode" [id]="selectedProject.name.substring(1)">
+      <br>
+      <ng-container *ngFor="let projectId of projectIds">
+        <div *ngIf="selectedProject.name == '#' + projectId.id" [id]="selectedProject.name.substring(1)"></div>
+      </ng-container>
     </div>
-  </div>
   </div>
 

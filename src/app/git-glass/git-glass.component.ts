@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import idList from './idList';
 import * as githubEmbed from '../js/github-embed.min';
 import {Project} from "../project.model";
 import {GitGlassService} from "../git-glass.service";
 
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 
 @Component({
   selector: 'app-git-glass',
@@ -19,9 +21,8 @@ export class GitGlassComponent implements OnInit {
   );
 
 
-
+  projectIds = idList;
   selectedProject: Project;
-  displayCode: boolean = false;
   displayIntro: boolean = true;
 
   constructor(private gitGlassService: GitGlassService) { }
@@ -40,10 +41,8 @@ export class GitGlassComponent implements OnInit {
         (project: Project) => {
           this.selectedProject = project;
           this.displayIntro = false;
-          this.displayCode = false;
-          wait(2).then(() => this.displayCode = true)
           console.log(this.displayIntro);
-          wait(8).then(() => this.onProjectSelected(project));
+          wait(5).then(() => this.onProjectSelected(project));
         }
       );
   }
@@ -52,6 +51,7 @@ export class GitGlassComponent implements OnInit {
     console.log(project.embedObject);
     githubEmbed(project.name, project.embedObject);
   }
+
 
   toJavaFrame() {
     this.selectedProject.name = '#selenium-java';
