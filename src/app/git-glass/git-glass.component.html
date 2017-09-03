@@ -2,21 +2,17 @@
   <br><br>
   <app-self-intro *ngIf="displayIntro"></app-self-intro>
 
-  <button type="button" class="btn btn-success"
-          *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'"
-          (click)="toPythonFrame()">Python</button>
-  <button type="button" class="btn btn-primary"
-          *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'"
-          (click)="toJavaFrame()">Java</button>
-  <button type="button" class="btn btn-success"
-          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-client'"
-          (click)="toClientFrame()">Client-side</button>
-  <button type="button" class="btn btn-primary"
-          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-client'"
-          (click)="toServerFrame()">Server-side</button>
-  <button type="button" class="btn btn-info" onclick="window.open('https://survey-story.herokuapp.com/')"
-          *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-client'"
-          >Open Application</button>
+  <ng-container *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'">
+    <button type="button" class="btn btn-success" (click)="toPythonFrame()">Python</button>
+    <button type="button" class="btn btn-primary" (click)="toJavaFrame()">Java</button>
+  </ng-container>
+
+  <ng-container *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-client'">
+    <button type="button" class="btn btn-success" (click)="toClientFrame()">Client-side</button>
+    <button type="button" class="btn btn-primary" (click)="toServerFrame()">Server-side</button>
+    <button type="button" class="btn btn-info" onclick="window.open('https://survey-story.herokuapp.com/')"
+    >Open Application</button>
+  </ng-container>
 
     <div class="git-glass">
       <br>
