@@ -20,15 +20,8 @@
 
     <div class="git-glass">
     <br>
-    <div id="selenium-java"  *ngIf="selectedProject.name == '#selenium-java'"></div>
-    <div id="selenium-python" *ngIf="selectedProject.name == '#selenium-python'"></div>
-    <div id="robot-amazon"  *ngIf="selectedProject.name == '#robot-amazon'"></div>
-    <div id="kuos-angular" *ngIf="selectedProject.name == '#kuos-angular'"></div>
-    <div id="ali-cucumber-sauce"  *ngIf="selectedProject.name == '#ali-cucumber-sauce'"></div>
-    <div id="simple-store-api"  *ngIf="selectedProject.name == '#simple-store-api'"></div>
-    <div id="alexa-sketches-vui" *ngIf="selectedProject.name == '#alexa-sketches-vui'"></div>
-    <div id="survey-stork-server"  *ngIf="selectedProject.name == '#survey-stork-server'"></div>
-    <div id="survey-stork-client"  *ngIf="selectedProject.name == '#survey-stork-client'"></div>
+    <div *ngIf="displayCode" [id]="selectedProject.name.substring(1)">
+    </div>
   </div>
   </div>
 

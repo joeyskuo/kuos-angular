@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import * as githubEmbed from '../js/github-embed.min';
 import {Project} from "../project.model";
 import {GitGlassService} from "../git-glass.service";
@@ -19,7 +18,10 @@ export class GitGlassComponent implements OnInit {
     {}
   );
 
+
+
   selectedProject: Project;
+  displayCode: boolean = false;
   displayIntro: boolean = true;
 
   constructor(private gitGlassService: GitGlassService) { }
@@ -38,8 +40,10 @@ export class GitGlassComponent implements OnInit {
         (project: Project) => {
           this.selectedProject = project;
           this.displayIntro = false;
+          this.displayCode = false;
+          wait(2).then(() => this.displayCode = true)
           console.log(this.displayIntro);
-          wait(5).then(() => this.onProjectSelected(project));
+          wait(8).then(() => this.onProjectSelected(project));
         }
       );
   }
@@ -109,6 +113,11 @@ export class GitGlassComponent implements OnInit {
               "type": "js",
               "label": "App.js",
               "path": "client/src/components/App.js"
+            },
+            {
+              "type": "js",
+              "label": "SurveyForm.js",
+              "path": "client/src/components/surveys/SurveyForm.js"
             },
             {
               "type": "js",
