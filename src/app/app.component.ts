@@ -11,11 +11,14 @@ export class AppComponent implements OnInit {
 
   startup: boolean = false;
 
+  constructor(private gitGlassService: GitGlassService) { }
+
   ngOnInit(){
     this.startup = false;
   }
 
   start(){
+    document.getElementById('footnav').style.position = 'static';
     this.startup = true;
   }
 

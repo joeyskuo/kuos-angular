@@ -31,7 +31,6 @@ export class GitGlassComponent implements OnInit {
     this.gitGlassService.introSelected
       .subscribe(
         (enabled: boolean) => {
-          console.log(enabled);
           this.displayIntro = enabled;
           this.selectedProject = this.emptyProj;
         }
@@ -41,7 +40,6 @@ export class GitGlassComponent implements OnInit {
         (project: Project) => {
           this.selectedProject = project;
           this.displayIntro = false;
-          console.log(this.displayIntro);
           wait(5).then(() => this.onProjectSelected(project));
         }
       );

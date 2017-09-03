@@ -6,10 +6,9 @@ export class GitGlassService {
 
   projectSelected = new EventEmitter<Project>();
   introSelected = new EventEmitter<boolean>();
+  resumeSelected = new EventEmitter<boolean>();
 
   private projects: Project[] = projectList;
-
-  constructor(){}
 
   getProjects() {
     return this.projects.slice();
