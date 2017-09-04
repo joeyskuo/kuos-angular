@@ -20,7 +20,6 @@ export class GitGlassComponent implements OnInit {
     {}
   );
 
-
   projectIds = idList;
   selectedProject: Project;
   displayIntro: boolean = true;
@@ -50,35 +49,10 @@ export class GitGlassComponent implements OnInit {
     githubEmbed(project.name, project.embedObject);
   }
 
-
-  toJavaFrame() {
-    this.selectedProject.name = '#selenium-java';
+  frameChange(projectName, alias) {
+    this.selectedProject.name = projectName;
     wait(5).then(() =>
-      githubEmbed('#selenium-java', projectFiles.seleniumJava));
-
-  }
-
-  toPythonFrame() {
-    this.selectedProject.name = '#selenium-python';
-    wait(5).then(() =>
-      githubEmbed('#selenium-python',
-        this.gitGlassService.getProjects()[2].embedObject));
-
-  }
-
-  toClientFrame() {
-    this.selectedProject.name = '#survey-stork-client';
-    wait(5).then(() =>
-      githubEmbed('#survey-stork-client', projectFiles.surveyClient));
-
-  }
-
-  toServerFrame() {
-    this.selectedProject.name = '#survey-stork-server';
-    wait(5).then(() =>
-      githubEmbed('#survey-stork-server',
-        this.gitGlassService.getProjects()[0].embedObject));
-
+      githubEmbed(projectName, projectFiles[alias]));
   }
 
 }
