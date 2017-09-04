@@ -2,12 +2,12 @@
   <br><br>
   <app-self-intro *ngIf="displayIntro"></app-self-intro>
 
-  <ng-container *ngIf="selectedProject.name == '#selenium-java' || selectedProject.name == '#selenium-python'">
+  <ng-container *ngIf="selectedProject.name.substring(0,9) == '#selenium'">
     <button type="button" class="btn btn-success" (click)="frameChange('#selenium-python', 'seleniumPython')">Python</button>
     <button type="button" class="btn btn-primary" (click)="frameChange('#selenium-java', 'seleniumJava')">Java</button>
   </ng-container>
 
-  <ng-container *ngIf="selectedProject.name == '#survey-stork-server' || selectedProject.name == '#survey-stork-client'">
+  <ng-container *ngIf="selectedProject.name.substring(0,7) == '#survey'">
     <button type="button" class="btn btn-success" (click)="frameChange('#survey-stork-client', 'surveyStorkClient')">Client-side</button>
     <button type="button" class="btn btn-primary" (click)="frameChange('#survey-stork-server', 'surveyStorkServer')">Server-side</button>
     <button type="button" class="btn btn-info" onclick="window.open('https://survey-story.herokuapp.com/')"
