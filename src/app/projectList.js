@@ -38,6 +38,40 @@ export default [
     }
   ),
   new Project(
+    '#alexa-sketches-vui',
+    'Voice user interface and online Pictionary application developed using D3.js, Express, and AWS Lambda',
+    {
+      "owner": "joeyskuo",
+      "repo": "alexa-sketches-vui",
+      "ref": "master",
+      "embed": [
+        {
+          "type": "htmlpage",
+          "label": "Sketchesgame.io",
+          "url": "https://www.sketchesgame.io"
+        },
+        {
+          "type": "js",
+          "label": "Intents",
+          "path": "IntentSchema.json"
+        },
+        {
+          "type": "js",
+          "label": "Alexa Skill",
+          "path": "index.js"
+        },
+        {
+          "type": "json",
+          "label": "Raw Sketch Data",
+          "path": "raw/airplane.ndjson",
+          "owner": "joeyskuo",
+          "repo": "sketch-parser",
+          "ref": "master"
+        }
+      ]
+    }
+  ),
+  new Project(
     '#kuos-angular',
     'Angular personal web page',
     {
@@ -183,27 +217,6 @@ export default [
           "type": "htmlpage",
           "label": "Swagger definition",
           "url": "https://simple-store-api.herokuapp.com/docs/#/item"
-        }
-      ]
-    }
-  ),
-  new Project(
-    '#alexa-sketches-vui',
-    'Voice user interface and online Pictionary application developed using D3.js, Express, and AWS Lambda',
-    {
-      "owner": "joeyskuo",
-      "repo": "alexa-sketches-vui",
-      "ref": "master",
-      "embed": [
-        {
-          "type": "js",
-          "label": "Alexa Skill",
-          "path": "index.js"
-        },
-        {
-          "type": "htmlpage",
-          "label": "Sketchesgame.io",
-          "url": "https://www.sketchesgame.io"
         }
       ]
     }
