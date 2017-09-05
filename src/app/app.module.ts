@@ -12,6 +12,7 @@ import { SkillsSectionComponent } from './resume/skills-section/skills-section.c
 import { FooterComponent } from './footer/footer.component';
 import { ProjectDetailComponent } from './resume/projects-section/project-detail/project-detail.component';
 import { SelfIntroComponent } from './git-glass/self-intro/self-intro.component';
+import { SketchesAudioComponent } from './git-glass/sketches-audio/sketches-audio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SelfIntroComponent } from './git-glass/self-intro/self-intro.component'
     SkillsSectionComponent,
     FooterComponent,
     ProjectDetailComponent,
-    SelfIntroComponent
+    SelfIntroComponent,
+    SketchesAudioComponent
   ],
   imports: [
     BrowserModule

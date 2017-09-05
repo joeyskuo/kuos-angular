@@ -1,0 +1,14 @@
+<div>
+  <div class="col-xs-2">
+    <button type="button" class="btn btn-success" (click)="playIntro()">Intro&nbsp;&nbsp;<span class="glyphicon glyphicon-volume-up"></span></button>
+  </div>
+  <div class="col-xs-10">
+    <div style="float: right;">
+      <input id="guess" type="text" pattern="[a-zA-Z]+" ng-pattern-restrict />
+      <button type="button" class="btn btn-primary" (click)="sendGuess()">Guess&nbsp;&nbsp;<span class="glyphicon glyphicon-volume-up"></span></button>
+      <button type="button" class="btn btn-info" (click)="playAnswer()"
+      >Auto-Answer&nbsp;&nbsp;<span class="glyphicon glyphicon-volume-up"></span></button>
+    </div>
+  </div>
+</div>
+
