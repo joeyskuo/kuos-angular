@@ -11,7 +11,7 @@
   <ng-container *ngIf="selectedProject.name.substring(0,7) == '#survey'">
     <button type="button" class="btn btn-success" (click)="frameChange('#survey-stork-client', 'surveyStorkClient')">Client-side</button>
     <button type="button" class="btn btn-primary" (click)="frameChange('#survey-stork-server', 'surveyStorkServer')">Server-side</button>
-    <button type="button" class="btn btn-info" onclick="window.open('https://survey-story.herokuapp.com/')"
+    <button type="button" class="btn btn-info" disabled style="cursor: default"
     >Open Application</button>
   </ng-container>
 
