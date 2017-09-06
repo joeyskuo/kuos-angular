@@ -6,11 +6,6 @@ export default {
     "ref": "master",
     "embed": [
       {
-        "type": "xml",
-        "label": "testng-amazon.xml",
-        "path": "testng-amazon.xml"
-      },
-      {
         "type": "java",
         "label": "BannerToCartTest.java",
         "path": "src/test/java/com/kuos/tests/BannerToCartTest.java"
@@ -19,6 +14,11 @@ export default {
         "type": "java",
         "label": "HomePage.java",
         "path": "src/test/java/com/kuos/pageobjects/HomePage.java"
+      },
+      {
+        "type": "xml",
+        "label": "testng-amazon.xml",
+        "path": "testng-amazon.xml"
       },
       {
         "type": "xml",

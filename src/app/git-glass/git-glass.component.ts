@@ -44,9 +44,8 @@ export class GitGlassComponent implements OnInit {
       );
   }
 
-  onProjectSelected(project: Project) {
-    console.log(project.embedObject);
-    githubEmbed(project.name, project.embedObject);
+  onProjectSelected({name, embedObject}) {
+    githubEmbed(name, embedObject);
   }
 
   frameChange(projectName, alias) {
